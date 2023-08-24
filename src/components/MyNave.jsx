@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react'
 
 const MyNave = () => {
-  return <div>MyNave</div>;
-};
+  return (
+    <div>MyNave</div>
+  )
+}
 
-export default MyNave;
+export default MyNave
