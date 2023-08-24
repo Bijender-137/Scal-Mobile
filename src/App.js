@@ -7,6 +7,7 @@ import HeroSection from "./components/HeroSection";
 import { ScalMobile } from "./components/ScalMobile";
 import { WhatStarted } from "./components/WhatStarted";
 import { Retailers } from "./components/Retailers";
+import AboutUs from "./components/AboutUs";
 function App() {
   return (
     <div className="bg-black">
@@ -15,6 +16,7 @@ function App() {
       <ScalMobile />
       <WhatStarted />
       <Retailers />
+      <AboutUs/>
     </div>
   );
 }
