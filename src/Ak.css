@@ -14,12 +14,15 @@
     linear-gradient(136deg, #0076be 0%, #48bf91 100%)
   );
 }
-.max_width_327 {
-  max-width: 327px;
-}
-.max_width_405 {
-  max-width: 405px;
-}
-.max_width_580 {
-  max-width: 580px;
+
+@media (min-width: 768px) {
+  .max_width_327 {
+    max-width: 327px;
+  }
+  .max_width_405 {
+    max-width: 405px;
+  }
+  .max_width_580 {
+    max-width: 580px;
+  }
 }
