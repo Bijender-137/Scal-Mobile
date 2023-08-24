@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap");
 
 * {
-  text-decoration: none;
-  list-style-type: none;
-  box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
+  text-decoration: none !important;
+  list-style-type: none !important;
+  box-sizing: border-box !important;
+  font-family: "Rubik", sans-serif !important;
 }
 
 .ff_rubik {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 :root {
@@ -24,7 +24,7 @@
   --lh-15: 150%;
   --lh-16: 160%;
   /* color */
-  --clr-lite: #B2B2B2;
+  --clr-lite: #b2b2b2;
 }
 
 .fw_900 {

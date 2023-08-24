@@ -1,3 +1,25 @@
-.dd {
-    display: flex;
+.clr_light_gray {
+  color: #e6e6e6 !important;
+}
+
+.linear_line::before {
+  position: absolute;
+  left: -23px;
+  content: "";
+  height: 100%;
+  width: 5px;
+  border-radius: 7px;
+  background: var(
+    --linear-colors-linear-3,
+    linear-gradient(136deg, #0076be 0%, #48bf91 100%)
+  );
+}
+.max_width_327 {
+  max-width: 327px;
+}
+.max_width_405 {
+  max-width: 405px;
+}
+.max_width_580 {
+  max-width: 580px;
 }
