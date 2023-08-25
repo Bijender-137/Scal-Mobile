@@ -9,7 +9,7 @@ export const WhatStarted = () => {
         <Container className=" custome_container">
           <Row className="justify-content-between align-items-center flex-column-reverse flex-md-row">
             <Col md={6} lg={4}>
-              <p className="position-relative linear_line lh_15 clr_light_gray ms-4 ms-md-0 fw-normal max_width_327 mb-0">
+              <p className="position-relative linear_line lh_15 clr_light_gray ms-4 ms-md-0 fs_lg fw-normal max_width_327 mb-0">
                 What started as a small US-based business has now evolved into
                 an international industry leader, operating in North and South
                 America, Asia, Europe, and Australia. Despite our worldwide

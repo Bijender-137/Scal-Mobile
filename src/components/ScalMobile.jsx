@@ -14,7 +14,7 @@ export const ScalMobile = () => {
               </div>
             </Col>
             <Col md={6} lg={4}>
-              <p className="position-relative linear_line lh_15 clr_light_gray ms-4 ms-md-0 fw-normal max_width_327 mb-0">
+              <p className="position-relative linear_line lh_15 clr_light_gray ms-4 fs_lg ms-md-0 fw-normal max_width_327 mb-0">
                 SCal Mobile marked its presence in 2010. Since then, we have
                 been working tirelessly around the idea of providing customers
                 with premium devices and services that change the norm in the
