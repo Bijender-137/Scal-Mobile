@@ -14,7 +14,7 @@ export const Retailers = () => {
               </div>
             </Col>
             <Col md={6} lg={4}>
-              <p className="position-relative linear_line lh_15 clr_light_gray ms-4 ms-md-0 fw-normal max_width_327 mb-0">
+              <p className="position-relative linear_line lh_15 clr_light_gray fs_lg ms-4 ms-md-0 fw-normal max_width_327 mb-0">
                 From retailers, carriers, distributors, and repair shops to
                 individual consumers, we cater to diverse needs, following a
                 client-centric approach that puts your specific requirements in

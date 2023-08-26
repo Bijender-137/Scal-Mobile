@@ -15,12 +15,13 @@ const Services = () => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1020,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: false,
+          dots: true,
+          autoplay: true,
         },
       },
       {
@@ -28,17 +29,20 @@ const Services = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 576,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
         },
       },
     ],
   };
+  const Arrows = React.useRef();
   return (
     <>
       <section className="py-5  mt-5">
@@ -55,12 +59,12 @@ const Services = () => {
               </p>
             </div>
             <Row className="py-4">
-              <Slider {...settings}>
+              <Slider {...settings} ref={Arrows}>
                 {ServicesData.map((data, i) => {
                   return (
                     <div key={i}>
                       <Col className="mx-3 pt-5 h-100">
-                        <div className="text-center services_border py-4 py-lg-5 px-3 px-xl-4 h-100">
+                        <div className="text-center services_border py-4 py-lg-5 px-2 h-100">
                           <div className="pt-xl-2 d-flex align-items-center flex-column">
                             <img
                               width="120"
@@ -72,7 +76,7 @@ const Services = () => {
                                 {data.italictext}
                               </i>
                             </p>
-                            <h5 className="fw-medium fs_2xl text-white pt-1">
+                            <h5 className="fw-medium fs_2xl text-white pt-1 px-4">
                               {data.heading}
                             </h5>
                             <p className="fw-normal fs_2xl clr_off_white pt-2 pt-lg-3 mb-0">
@@ -86,7 +90,10 @@ const Services = () => {
                 })}
               </Slider>
             </Row>
-            <div className="cursor_pointer position-absolute  left_arrow_slider">
+            <div
+              onClick={() => Arrows.current.slickPrev()}
+              className="cursor_pointer position-absolute  left_arrow_slider d-none d-lg-block slider_arrows"
+            >
               <svg
                 width="52"
                 height="52"
@@ -108,7 +115,10 @@ const Services = () => {
                 />
               </svg>
             </div>
-            <div className="cursor_pointer position-absolute right_arrow_slider">
+            <div
+              onClick={() => Arrows.current.slickNext()}
+              className="cursor_pointer position-absolute right_arrow_slider d-none d-lg-block slider_arrows"
+            >
               <svg
                 width="52"
                 height="52"

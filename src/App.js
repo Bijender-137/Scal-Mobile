@@ -12,6 +12,7 @@ import Products from "./components/Products";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Services from "./components/Services";
+import ContactUs from "./components/ContactUs";
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
       <ScalMobile />
       <WhatStarted />
       <Retailers />
-      {/* <AboutUs /> */}
+      <AboutUs />
       <Products />
-      <Services/>
+      <Services />
+      <ContactUs/>
      
      
     </div>

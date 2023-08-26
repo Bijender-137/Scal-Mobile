@@ -42,6 +42,11 @@ export const ServicesData = [
     italictext: "Production Program",
     heading: "Advance Inventory Access",
     para: "Worried the model you’re interested in will be sold before it’s added to our available inventory? Looking to reserve a specific product not yet in our ready-to-ship offerings? With our Production Program, gain advance notice to inventory that will be ready to ship within one to three days.",
+  }, {
+    img: Data_ensore,
+    italictext: "Data Erasures",
+    heading: "Secure Deletion Of Data On All Devices",
+    para: "Want to remove all data from your devices permanently? At SCal Mobile, we are certified to wipe any data-containing devices. Our team uses approved methods that comply with the highest regulatory standards, offering high-performing solutions that value your data's safety and save you from the deletion headache.",
   },
  
 ]
