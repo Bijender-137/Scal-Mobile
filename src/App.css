@@ -201,6 +201,13 @@ input:-internal-autofill-selected {
   width: 50%;
 }
 
+/* footer */
+.footer_bg_img {
+  background-image: url("./assets/img/webp/footer_bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* nav-responsive */
 @media (max-width:575.98px) {
   .hamburger {

@@ -13,6 +13,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
+import MyFooter from "./components/MyFooter";
 
 function App() {
   return (
@@ -26,7 +27,7 @@ function App() {
       <Products />
       <Services />
       <ContactUs/>
-     
+     <MyFooter/>
      
     </div>
   );
