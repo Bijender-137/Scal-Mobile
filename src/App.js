@@ -14,27 +14,23 @@ import "slick-carousel/slick/slick-theme.css";
 import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import MyFooter from "./components/MyFooter";
-
 import { WhyChooseUs } from "./components/WhyChooseUs";
-import RoadMap from "./components/RoadMap";
 import Faq from "./components/Faq";
+// import { WhyChooseUs } from "./components/WhyChooseUs";
 function App() {
   return (
     <div className="bg-black overflow-hidden">
-      {/* <MyNave /> */}
       <HeroSection />
       <ScalMobile />
       <WhatStarted />
       <Retailers />
-      {/* <WhyChooseUs /> */}
-      <RoadMap/>
+      <WhyChooseUs />
       <AboutUs />
-      <Products />  
-      <Faq/>
+      <Products />
+      <Faq />
       <Services />
       <ContactUs />
       <MyFooter />
-     
     </div>
   );
 }
