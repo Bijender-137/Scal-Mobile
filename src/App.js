@@ -15,19 +15,25 @@ import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import MyFooter from "./components/MyFooter";
 
+import { WhyChooseUs } from "./components/WhyChooseUs";
+import RoadMap from "./components/RoadMap";
+import Faq from "./components/Faq";
 function App() {
   return (
-    <div className="bg-black">
-      <MyNave />
+    <div className="bg-black overflow-hidden">
+      {/* <MyNave /> */}
       <HeroSection />
       <ScalMobile />
       <WhatStarted />
       <Retailers />
+      {/* <WhyChooseUs /> */}
+      <RoadMap/>
       <AboutUs />
-      <Products />
+      <Products />  
+      <Faq/>
       <Services />
-      <ContactUs/>
-     <MyFooter/>
+      <ContactUs />
+      <MyFooter />
      
     </div>
   );

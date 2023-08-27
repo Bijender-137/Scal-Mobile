@@ -12,14 +12,14 @@
 }
 
 :root {
-  --fs-xsm: 14px;
-  --fs-sm: 16px;
-  --fs-md: 18px;
-  --fs-lg: 20px;
-  --fs-3xl: 28px;
-  --fs-4xl: 40px;
-  --fs-5xl: 48px;
-  --fs-8xl: 180px;
+  --fs-xsm: 13px;
+  --fs-sm: 14px;
+  --fs-md: 16px;
+  --fs-lg: 16px;
+  --fs-3xl: 18px;
+  --fs-4xl: 20px;
+  --fs-5xl: 28px;
+  --fs-8xl: 50px;
   /* line height */
   --lh-15: 150%;
   --lh-16: 160%;
@@ -48,6 +48,10 @@
 
 .fw_800 {
   font-weight: 800;
+}
+
+.line_h_120 {
+  line-height: 120%;
 }
 
 .clr_lite {
@@ -105,4 +109,30 @@
 .custome_container {
   max-width: 1140px !important;
   padding-left: 12px;
+}
+
+@media (min-width:576px) {
+  :root {
+    --fs-xsm: 14px;
+    --fs-sm: 16px;
+    --fs-md: 18px;
+    --fs-lg: 20px;
+    --fs-3xl: 28px;
+    --fs-4xl: 40px;
+    --fs-5xl: 48px;
+    --fs-8xl: 80px;
+  }
+}
+
+@media (min-width:768px) {
+  :root {
+    --fs-xsm: 14px;
+    --fs-sm: 16px;
+    --fs-md: 18px;
+    --fs-lg: 20px;
+    --fs-3xl: 28px;
+    --fs-4xl: 40px;
+    --fs-5xl: 48px;
+    --fs-8xl: 180px;
+  }
 }

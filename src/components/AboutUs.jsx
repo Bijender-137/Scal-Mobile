@@ -1,22 +1,22 @@
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
-
+import About_us_img from "../assets/img/webp/about_us_img.webp";
 const AboutUs = () => {
   return (
     <>
-      <section className="py-5"id="about">
+      <section className="py-5" id="about">
         <Container className="custome_container">
           <div className="text-start">
             <h2 className="fw-medium fs_4xl text-white mb-0">About Us</h2>
-            <p className="clr_lite fw-normal fs_sm">
+            <p className="clr_lite fw-normal fs_sm mb-0">
               We Started With A Single Goal:
             </p>
           </div>
-          <Row className=" align-items-center">
+          <Row className=" align-items-center mt-4 pt-2">
             <Col lg={6}>
               <Accordion defaultActiveKey={["0"]}>
-                <Accordion.Item eventKey="0" className=" mb-4 ">
+                < Accordion.Item eventKey="0" className=" mb-4 ">
                   <Accordion.Header>
                     <p className=" mb-0 fs_lg   text-white fw-normal me-2">
                       01.
@@ -106,6 +106,15 @@ const AboutUs = () => {
                   </Accordion.Body>
                 </Accordion.Item>
               </Accordion>
+            </Col>
+            <Col sm={8} lg={6} className="position-relative mx-auto mx-lg-0">
+              <div className="about_us_img_width">
+                <img
+                  className="w-100 about_us_img_position"
+                  src={About_us_img}
+                  alt="About_us_img"
+                />
+              </div>
             </Col>
           </Row>
         </Container>

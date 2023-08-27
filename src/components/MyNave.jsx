@@ -10,7 +10,7 @@ const MyNave = () => {
   }
   return (
     <>
-      <section>
+      <section className=" z_index_1">
         <nav>
           <Container className="custome_container py-2">
             <div className="d-flex align-items-center justify-content-between">

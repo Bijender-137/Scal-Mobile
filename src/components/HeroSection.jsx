@@ -1,11 +1,13 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Map_img from "../assets/img/webp/map3.webp";
+import MyNave from "./MyNave";
 const HeroSection = () => {
   return (
     <>
-      <section className="py-5 z_index_1">
-        <Container className="custome_container position-relative">
+      <section className="z_index_1 position-relative hero_sec_lining">
+        <MyNave/>
+        <Container className="custome_container position-relative py-5">
           <div className="position-absolute dark_pink_bg_circel start-50 translate-middle-x"></div>
           <div className="text-center mt-4 pt-2">
             <h1 className="mb-0 fw-medium fs_5xl text-white">

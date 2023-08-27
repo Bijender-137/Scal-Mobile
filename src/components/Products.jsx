@@ -40,7 +40,7 @@ const Products = () => {
   };
   return (
     <>
-      <section className="py-5">
+      <section className="py-5"id="products">
         <Container className="custome_container">
           <div>
             <h2 className="text-center fs_4xl text-white">Products</h2>

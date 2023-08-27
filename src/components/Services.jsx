@@ -45,7 +45,7 @@ const Services = () => {
   const Arrows = React.useRef();
   return (
     <>
-      <section className="py-5  mt-5">
+      <section className="py-5  mt-5"id="services">
         <div className="services_bg_clr py-5 mt-4">
           <Container className="custome_container py-5 mt-4 position-relative">
             <div className="text-center">
