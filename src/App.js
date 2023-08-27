@@ -8,7 +8,7 @@ import { ScalMobile } from "./components/ScalMobile";
 import { WhatStarted } from "./components/WhatStarted";
 import { Retailers } from "./components/Retailers";
 import AboutUs from "./components/AboutUs";
-import { Roadmap } from "./components/Roadmap";
+import { Faq } from "./components/Faq";
 import { WhyChooseUs } from "./components/WhyChooseUs";
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <WhatStarted />
       <Retailers />
       <AboutUs />
-      {/* <Roadmap /> */}
+      <Faq />
       <WhyChooseUs />
     </div>
   );

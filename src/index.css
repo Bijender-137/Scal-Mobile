@@ -25,6 +25,21 @@
   --lh-16: 160%;
   /* color */
   --clr-lite: #b2b2b2;
+  --clr-off-white: #C5E4E9;
+  --clr-bad-white: #BADDE8;
+  --clr-BFE0E6-white: #BFE0E6;
+}
+
+.clr_bfe_white {
+  color: var(--clr-BFE0E6-white);
+}
+
+.clr_bad_white {
+  color: var(--clr-bad-white);
+}
+
+.clr_off_white {
+  color: var(--clr-off-white);
 }
 
 .fw_900 {

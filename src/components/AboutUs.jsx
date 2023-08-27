@@ -5,8 +5,8 @@ import Accordion from "react-bootstrap/Accordion";
 const AboutUs = () => {
   return (
     <>
-      <section className="py-5">
-        <Container>
+      <section className="py-5"id="about">
+        <Container className="custome_container">
           <div className="text-start">
             <h2 className="fw-medium fs_4xl text-white mb-0">About Us</h2>
             <p className="clr_lite fw-normal fs_sm">

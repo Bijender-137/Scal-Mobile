@@ -129,7 +129,70 @@
 .max_width_442 {
   max-width: 442px;
 }
+/* faq */
+#faq .accordion-button:not(.collapsed)::after {
+  background-image: url(../src/assets/img/png/minus.png) !important;
+}
+#faq .accordion-item:has(.accordion-header .accordion-button.collapsed) {
+  background: none !important;
+}
+#faq .accordion-item {
+  border-top-left-radius: var(--bs-accordion-border-radius);
+  border-top-right-radius: var(--bs-accordion-border-radius);
+  border-bottom-left-radius: var(--bs-accordion-border-radius);
+  border-bottom-right-radius: var(--bs-accordion-border-radius);
+  border: none !important;
+}
+#faq .accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-active-color);
+  background-color: var(--bs-accordion-active-bg);
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 transparent !important;
+  border-top-right-radius: var(--bs-accordion-inner-border-radius);
+  border-top-left-radius: var(--bs-accordion-inner-border-radius);
+}
+#faq .accordion-body {
+  padding: 0px 16px 13px 0px !important;
+  color: white !important;
+  background-color: black !important;
+  border-bottom-right-radius: var(--bs-accordion-inner-border-radius);
+  border-bottom-left-radius: var(--bs-accordion-inner-border-radius);
+}
 
+#faq .accordion-item {
+  position: relative;
+  border-bottom: 2px solid #4c4c4c !important;
+  border-radius: 0px !important;
+  transition: all 300ms ease-in-out !important;
+  background: black !important;
+}
+#faq .accordion-item:last-child {
+  position: relative;
+  border-bottom: 2px solid transparent !important;
+  border-radius: 0px !important;
+  transition: all 300ms ease-in-out !important;
+  background: black !important;
+}
+
+#faq .accordion-button {
+  align-items: center !important;
+  color: white !important;
+  background-color: black !important;
+  border-radius: 4px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  padding-left: 0px !important;
+}
+#faq .accordion-button::after {
+  background-image: url(../src/assets/img/png/plus.png) !important;
+}
+#faq .accordion {
+  --bs-accordion-btn-icon: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23212529%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e);
+  --bs-accordion-btn-icon-width: 15px !important;
+  --bs-accordion-btn-active-icon: url(data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%230c63e4%27%3e%3cpath fill-rule=%27evenodd%27 d=%27M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z%27/%3e%3c/svg%3e);
+  --bs-accordion-btn-focus-border-color: #9aa8bd;
+  --bs-accordion-btn-focus-box-shadow: transparent !important;
+  border: none !important;
+}
 /* Timeline */
 
 .timeline {

@@ -37,6 +37,177 @@ nav ul li a:hover {
   top: 20%;
 }
 
+/* products */
+.products_border {
+  position: relative !important;
+  background: linear-gradient(140.61deg,
+      rgba(255, 255, 255, 0) -1.87%,
+      rgba(255, 255, 255, 0) 105.41%);
+  border-radius: 15.716px;
+  background: linear-gradient(136deg,
+      rgba(0, 118, 190, 0.05) 0%,
+      rgba(72, 191, 145, 0.05) 100%);
+  backdrop-filter: blur(28.484941482543945px);
+  transition: 0.3s ease-in-out;
+}
+
+.products_border::after {
+  content: "";
+  position: absolute !important;
+  border-radius: 16px;
+  background: linear-gradient(136.39deg, #0076be 3.65%, #48bf91 89.63%);
+  padding-left: 3px;
+  padding-right: 3px;
+  inset: 0;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+}
+
+.products_border:hover {
+  transform: translateY(-25px);
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+  display: flex !important;
+}
+
+.slick-slide>div {
+  display: flex;
+}
+
+.clr_lite_blue {
+  color: #95D8EB;
+}
+
+/******** services********* */
+.services_bg_clr {
+  background: linear-gradient(136.39deg, #0076BE 3.65%, #48BF91 89.63%);
+}
+
+.services_border {
+  position: relative !important;
+  border-radius: 15.716px;
+  border-right: 2px solid var(--white, #FFF);
+  border-left: 2px solid var(--white, #FFF);
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(28.484941482543945px);
+  transition: 0.3s ease-in-out;
+}
+
+.services_border::after {
+  content: "";
+  position: absolute !important;
+  border-radius: 16px;
+  background: linear-gradient(136.39deg, #fff 3.65%, #fff 89.63%);
+  padding-left: 2px;
+  padding-right: 2px;
+  inset: 0;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  pointer-events: none;
+}
+
+/* slider arrows */
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 20px !important;
+  line-height: 20px;
+  position: absolute;
+  top: 30px !important;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slider_arrows:active path {
+  fill: black !important;
+}
+
+.slider_arrows:active svg {
+  fill: white;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.left_arrow_slider {
+  left: -50px;
+  bottom: 38%;
+}
+
+.right_arrow_slider {
+  right: -50px;
+  bottom: 38%;
+}
+
+/* ****contact us****** */
+.text_linier_contact {
+  background: var(--linear-colors-linear-1, linear-gradient(134deg, #0076BE 0%, #95D8EB 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* form */
+.input_bg {
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.20);
+  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.textarea_h {
+  height: 150px;
+}
+
+.btn_send_now {
+  padding: 14px 31px;
+  border-radius: 100px;
+  background: var(--linear-colors-linear-3, linear-gradient(136deg, #0076BE 0%, #48BF91 100%));
+}
+
+input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: transparent !important;
+  color: fieldtext !important;
+}
+
+.w_50 {
+  width: 50%;
+}
+
+/* footer */
+.footer_bg_img {
+  background-image: url("./assets/img/webp/footer_bg.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* nav-responsive */
 @media (max-width:575.98px) {
   .hamburger {
@@ -45,6 +216,10 @@ nav ul li a:hover {
     cursor: pointer;
     position: relative;
     z-index: 7;
+  }
+
+  .w_100 {
+    width: 100% !important;
   }
 
   .bar {
@@ -76,7 +251,6 @@ nav ul li a:hover {
     transform: translateY(-8px) rotate(-45deg);
     margin: 5px 0 0 0;
   }
-  
 
   .nav-menu {
     position: fixed;
@@ -95,5 +269,24 @@ nav ul li a:hover {
 
   .active {
     right: 0% !important;
+  }
+}
+
+@media (min-width:1199.98px) {
+  .contact_img_position {
+    left: 40px;
+    position: absolute;
+  }
+
+  .contact_img_w {
+    max-width: 598px;
+    height: 611px;
+  }
+}
+
+@media (min-width:1399.98px) {
+  .contact_img_position {
+    left: 60px;
+    position: absolute;
   }
 }
