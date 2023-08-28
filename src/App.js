@@ -16,6 +16,7 @@ import ContactUs from "./components/ContactUs";
 import MyFooter from "./components/MyFooter";
 import { WhyChooseUs } from "./components/WhyChooseUs";
 import Faq from "./components/Faq";
+import Roadmap from "./components/RoadMap";
 // import { WhyChooseUs } from "./components/WhyChooseUs";
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
       <ScalMobile />
       <WhatStarted />
       <Retailers />
-      <WhyChooseUs />
+      {/* <WhyChooseUs /> */}
+      <Roadmap/>
       <AboutUs />
       <Products />
       <Faq />

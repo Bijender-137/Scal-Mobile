@@ -27,14 +27,14 @@ const MyFooter = () => {
                 <ul className="mb-0 ps-0">
                   <li className="fw-normal fs_sm text-white">Links</li>
                   <li className="mt-2 pt-1">
-                    <a href="#about" className="fw-normal fs_sm clr_bfe_white text-nowrap">
+                    <a href="#about" className="fw-normal footer_text fs_sm clr_bfe_white text-nowrap">
                       About Us
                     </a>
                   </li>
                   <li className="mt-2 pt-1">
                     <a
                       href="#services"
-                      className="fw-normal fs_sm clr_bfe_white"
+                      className="fw-normal footer_text fs_sm clr_bfe_white"
                     >
                       Services
                     </a>
@@ -42,7 +42,7 @@ const MyFooter = () => {
                   <li className="mt-2 pt-1">
                     <a
                       href="#products"
-                      className="fw-normal fs_sm clr_bfe_white"
+                      className="fw-normal footer_text fs_sm clr_bfe_white"
                     >
                       Products
                     </a>
@@ -50,13 +50,13 @@ const MyFooter = () => {
                   <li className="mt-2 pt-1">
                     <a
                       href="#partner"
-                      className="fw-normal fs_sm clr_bfe_white"
+                      className="fw-normal footer_text fs_sm clr_bfe_white"
                     >
                       Partners
                     </a>
                   </li>
                   <li className="mt-2 pt-1">
-                    <a href="#faq" className="fw-normal fs_sm clr_bfe_white">
+                    <a href="#faq" className="fw-normal footer_text fs_sm clr_bfe_white">
                       FAQs
                     </a>
                   </li>

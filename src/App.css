@@ -36,6 +36,7 @@ nav ul li a:hover {
   top: 0;
   left: 45%;
   transform: translateX(-48%);
+  z-index: -1;
 }
 
 /* circel */
@@ -124,6 +125,16 @@ nav ul li a:hover {
   pointer-events: none;
 }
 
+.services_border:hover {
+  transform: translateY(-20px);
+}
+
+/* faq section */
+.faq_sec_img {
+  max-width: 724px;
+  height: 462px;
+}
+
 /* slider arrows */
 .slick-dots li button:before {
   font-family: 'slick';
@@ -201,6 +212,11 @@ input[type=number] {
   background: var(--linear-colors-linear-3, linear-gradient(136deg, #0076BE 0%, #48BF91 100%));
 }
 
+
+.btn_send_now:hover {
+  background: var(--linear-colors-linear-3, linear-gradient(136deg, #48BF91 0%, #0076BE));
+}
+
 input:-internal-autofill-selected {
   appearance: menulist-button;
   background-image: none !important;
@@ -213,6 +229,12 @@ input:-internal-autofill-selected {
 }
 
 /* footer */
+.footer_text:hover {
+  color: white !important;
+  -webkit-text-stroke-width: 0.5px;
+}
+
+
 .footer_bg_img {
   background-image: url("./assets/img/webp/footer_bg.webp");
   background-size: cover;

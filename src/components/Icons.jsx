@@ -1,6 +1,6 @@
 export const FacebookIcon = () => {
   return (
-    <svg
+    <svg className="footer_icons"
       width="30"
       height="31"
       viewBox="0 0 30 31"
